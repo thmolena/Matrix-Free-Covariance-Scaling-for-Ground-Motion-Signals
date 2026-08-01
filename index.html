@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Authenticated station-referenced streaming energy study on EarthScope ground-motion records">
+  <title>Station-Referenced Streaming Energy Ratios for Early Ground-Motion Screening</title>
+  <style>
+    :root {
+      --ink: #172126;
+      --muted: #55636a;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --line: #d8d5cc;
+      --blue: #1f6f9f;
+      --red: #a83b32;
+      --green: #2e7252;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.58;
+    }
+    header, main, footer { width: min(1080px, calc(100% - 2rem)); margin: auto; }
+    header { padding: 4.5rem 0 2.2rem; border-bottom: 1px solid var(--line); }
+    .kicker { color: var(--red); font: 700 .78rem/1.2 system-ui, sans-serif; letter-spacing: .13em; text-transform: uppercase; }
+    h1 { max-width: 900px; margin: .8rem 0 1rem; font-size: clamp(2.25rem, 6vw, 4.9rem); line-height: 1.02; font-weight: 500; letter-spacing: -.035em; }
+    .lead { max-width: 800px; color: var(--muted); font-size: 1.2rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.5rem; }
+    .button { display: inline-block; padding: .65rem .95rem; border: 1px solid var(--ink); color: var(--ink); text-decoration: none; font: 650 .88rem system-ui, sans-serif; }
+    .button.primary { color: white; background: var(--ink); }
+    main { padding: 2.5rem 0 4rem; }
+    section { margin: 0 0 3.5rem; }
+    h2 { margin: 0 0 1rem; font-size: 1.7rem; font-weight: 500; }
+    .metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+    .metric { background: var(--panel); padding: 1.15rem; }
+    .metric strong { display: block; color: var(--blue); font: 650 1.75rem/1.1 system-ui, sans-serif; }
+    .metric span { color: var(--muted); font: .78rem system-ui, sans-serif; text-transform: uppercase; letter-spacing: .06em; }
+    .figures { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    figure { margin: 0; padding: 1rem; background: var(--panel); border: 1px solid var(--line); }
+    figure.wide { grid-column: 1 / -1; }
+    figure img { display: block; width: 100%; height: auto; }
+    figcaption { margin-top: .8rem; color: var(--muted); font-size: .92rem; }
+    table { width: 100%; border-collapse: collapse; background: var(--panel); }
+    th, td { padding: .75rem; border-bottom: 1px solid var(--line); text-align: left; }
+    th { font: 650 .78rem system-ui, sans-serif; letter-spacing: .05em; text-transform: uppercase; }
+    td:not(:first-child), th:not(:first-child) { text-align: right; }
+    .note { border-left: 4px solid var(--red); padding: .9rem 1rem; background: #fff7f4; }
+    code { background: #eeece5; padding: .12rem .3rem; font-size: .9em; }
+    pre { overflow-x: auto; padding: 1rem; color: #ecf3f5; background: #172126; }
+    footer { padding: 1.5rem 0 3rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .9rem; }
+    @media (max-width: 760px) {
+      .metric-grid, .figures { grid-template-columns: 1fr; }
+      figure.wide { grid-column: auto; }
+      h1 { font-size: 2.55rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="kicker">Authenticated ground-motion study</div>
+    <h1>Station-Referenced Streaming Energy Ratios for Early Ground-Motion Screening</h1>
+    <p class="lead">A constant-state early-screening statistic, a sharp perturbation certificate, and a fresh confirmation study on twelve magnitude-8.0 or larger earthquakes.</p>
+    <div class="actions">
+      <a class="button primary" href="main.pdf">Read the paper</a>
+      <a class="button" href="code/results/streaming/streaming_study.json">Locked result</a>
+      <a class="button" href="code/results/streaming/confirmation_pairs.csv">Confirmation scores</a>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="result-title">
+      <h2 id="result-title">Registered confirmation result</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>25.6 s</strong><span>selected prefix</span></div>
+        <div class="metric"><strong>0.792</strong><span>balanced accuracy</span></div>
+        <div class="metric"><strong>0.917</strong><span>specificity</span></div>
+        <div class="metric"><strong>56.1 μs</strong><span>median apply time</span></div>
+      </div>
+      <p class="note">The paired 95 percent interval for the balanced-accuracy improvement is [-0.083, 0.250]. The observed improvement is not statistically resolved. Four event windows are missed and one quiet window produces a false alarm.</p>
+    </section>
+
+    <section aria-labelledby="evidence-title">
+      <h2 id="evidence-title">Evidence organized by claim</h2>
+      <div class="figures">
+        <figure class="wide">
+          <img src="code/manuscript_assets/figures/prefix_performance.png" alt="Balanced accuracy versus available waveform duration for the proposed statistic and two controls">
+          <figcaption>The latency–accuracy curve fixes the selected prefix and shows that longer windows do not yield monotone improvement.</figcaption>
+        </figure>
+        <figure>
+          <img src="code/manuscript_assets/figures/confirmation_scores.png" alt="Event and independent quiet scores for every confirmation pair">
+          <figcaption>Every confirmation score remains visible relative to the development threshold.</figcaption>
+        </figure>
+        <figure>
+          <img src="code/manuscript_assets/figures/runtime_memory.png" alt="Measured runtime and numerical working storage versus processed waveform duration">
+          <figcaption>Measured time grows linearly while the numerical streaming state remains constant.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="comparison-title">
+      <h2 id="comparison-title">Fixed-prefix comparison</h2>
+      <table>
+        <thead><tr><th>Method</th><th>Balanced accuracy</th><th>Sensitivity</th><th>Specificity</th><th>AUC</th></tr></thead>
+        <tbody>
+          <tr><td>Station-reference ratio</td><td>0.792</td><td>0.667</td><td>0.917</td><td>0.833</td></tr>
+          <tr><td>Raw mean energy</td><td>0.708</td><td>0.833</td><td>0.583</td><td>0.833</td></tr>
+          <tr><td>Raw 0.9-quantile</td><td>0.708</td><td>0.833</td><td>0.583</td><td>0.833</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="data-title">
+      <h2 id="data-title">Source and partition contract</h2>
+      <p>The study references 108 original EarthScope FDSN responses totaling 66,981,395 bytes. USGS ComCat supplies the event metadata. Development uses eight earthquakes. Confirmation uses four later events and the previously unused stations TATO, PAB, and CASY. Every response is bound to its source URL and SHA-256 digest.</p>
+      <p>The statistic compares an event-aligned candidate with a one-day-offset station reference. A distinct two-day-offset trace supplies the negative. The confirmation set is opened only after the eight-block prefix and threshold are fixed.</p>
+    </section>
+
+    <section aria-labelledby="reproduce-title">
+      <h2 id="reproduce-title">Exact replay</h2>
+      <pre><code>cd code
+python -m pip install -e '.[test,figures]'
+python -m pytest -q
+cd ..
+station-energy-study --offline --verify</code></pre>
+      <p>Semantic hash: <code>6121bb9eaa0affe7f9b3fb7e5973e552260f180f8c4a13e2b86042ebad93c655</code></p>
+    </section>
+  </main>
+
+  <footer>
+    Molena Huynh · North Carolina State University · BSD-3-Clause source release
+  </footer>
+</body>
+</html>

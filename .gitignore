@@ -1,0 +1,15 @@
+.venv/
+.venv-audit/
+.earthscope-cache/
+.pdf-audit/
+reproduced.json
+**/__pycache__/
+**/.pytest_cache/
+**/build/
+**/*.egg-info/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz

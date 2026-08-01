@@ -1,0 +1,3024 @@
+{
+  "confirmation": {
+    "metrics": {
+      "raw_mean": {
+        "auc": 0.8333333333333334,
+        "balanced_accuracy": 0.7083333333333334,
+        "sensitivity": 0.8333333333333334,
+        "specificity": 0.5833333333333334
+      },
+      "raw_q90": {
+        "auc": 0.8333333333333334,
+        "balanced_accuracy": 0.7083333333333334,
+        "sensitivity": 0.8333333333333334,
+        "specificity": 0.5833333333333334
+      },
+      "reference_ratio": {
+        "auc": 0.8333333333333334,
+        "balanced_accuracy": 0.7916666666666666,
+        "sensitivity": 0.6666666666666666,
+        "specificity": 0.9166666666666666
+      }
+    },
+    "paired_bootstrap_difference_vs_raw_q90": {
+      "lower_95": -0.08333333333333326,
+      "mean_difference": 0.08478749999999999,
+      "repetitions": 10000,
+      "seed": 260801,
+      "upper_95": 0.25
+    },
+    "pairs": [
+      {
+        "event_decision": true,
+        "event_id": "us7000dflf",
+        "event_score": 1.0338670411429358,
+        "event_short": "Kermadec",
+        "negative_decision": true,
+        "negative_score": 0.442838697631705,
+        "station": "TATO"
+      },
+      {
+        "event_decision": true,
+        "event_id": "us7000dflf",
+        "event_score": 1.3103103995745846,
+        "event_short": "Kermadec",
+        "negative_decision": true,
+        "negative_score": 0.2206636487452673,
+        "station": "PAB"
+      },
+      {
+        "event_decision": true,
+        "event_id": "us7000dflf",
+        "event_score": 1.5242196417378218,
+        "event_short": "Kermadec",
+        "negative_decision": true,
+        "negative_score": -0.039152747119581985,
+        "station": "CASY"
+      },
+      {
+        "event_decision": true,
+        "event_id": "ak0219neiszm",
+        "event_score": 1.5074403364503348,
+        "event_short": "Chignik",
+        "negative_decision": true,
+        "negative_score": 0.10055753950806315,
+        "station": "TATO"
+      },
+      {
+        "event_decision": true,
+        "event_id": "ak0219neiszm",
+        "event_score": 3.676671717374082,
+        "event_short": "Chignik",
+        "negative_decision": true,
+        "negative_score": -0.17269934316007546,
+        "station": "PAB"
+      },
+      {
+        "event_decision": false,
+        "event_id": "ak0219neiszm",
+        "event_score": -0.6505320179385845,
+        "event_short": "Chignik",
+        "negative_decision": false,
+        "negative_score": 0.8881135639970223,
+        "station": "CASY"
+      },
+      {
+        "event_decision": false,
+        "event_id": "us6000f53e",
+        "event_score": -0.7312375945733716,
+        "event_short": "Sandwich",
+        "negative_decision": true,
+        "negative_score": -0.8361786630658563,
+        "station": "TATO"
+      },
+      {
+        "event_decision": false,
+        "event_id": "us6000f53e",
+        "event_score": 0.34017653304077367,
+        "event_short": "Sandwich",
+        "negative_decision": true,
+        "negative_score": -2.191849963378534,
+        "station": "PAB"
+      },
+      {
+        "event_decision": true,
+        "event_id": "us6000f53e",
+        "event_score": 2.6241561468977177,
+        "event_short": "Sandwich",
+        "negative_decision": true,
+        "negative_score": -1.147367270872998,
+        "station": "CASY"
+      },
+      {
+        "event_decision": true,
+        "event_id": "us6000qw60",
+        "event_score": 2.466803256841487,
+        "event_short": "Kamchatka",
+        "negative_decision": true,
+        "negative_score": -0.08824617235881299,
+        "station": "TATO"
+      },
+      {
+        "event_decision": true,
+        "event_id": "us6000qw60",
+        "event_score": 2.200891713553905,
+        "event_short": "Kamchatka",
+        "negative_decision": true,
+        "negative_score": -1.6494803361743309,
+        "station": "PAB"
+      },
+      {
+        "event_decision": false,
+        "event_id": "us6000qw60",
+        "event_score": -0.8603997782385481,
+        "event_short": "Kamchatka",
+        "negative_decision": true,
+        "negative_score": -1.9835815279397246,
+        "station": "CASY"
+      }
+    ]
+  },
+  "data": {
+    "catalog": "USGS ComCat",
+    "confirmation_events": [
+      {
+        "depth_km": 28.93,
+        "event_id": "us7000dflf",
+        "latitude": -29.7228,
+        "longitude": -177.2794,
+        "magnitude": 8.1,
+        "name": "Kermadec Islands",
+        "origin_epoch_seconds": 1614886113.178
+      },
+      {
+        "depth_km": 35.0,
+        "event_id": "ak0219neiszm",
+        "latitude": 55.3635,
+        "longitude": -157.8876,
+        "magnitude": 8.2,
+        "name": "Chignik, Alaska",
+        "origin_epoch_seconds": 1627539349.188
+      },
+      {
+        "depth_km": 22.79,
+        "event_id": "us6000f53e",
+        "latitude": -58.3753,
+        "longitude": -25.2637,
+        "magnitude": 8.1,
+        "name": "South Sandwich Islands",
+        "origin_epoch_seconds": 1628793317.231
+      },
+      {
+        "depth_km": 35.0,
+        "event_id": "us6000qw60",
+        "latitude": 52.4948,
+        "longitude": 160.2395,
+        "magnitude": 8.8,
+        "name": "Kamchatka Peninsula",
+        "origin_epoch_seconds": 1753831492.483
+      }
+    ],
+    "confirmation_pairs": 12,
+    "confirmation_stations": [
+      "TATO",
+      "PAB",
+      "CASY"
+    ],
+    "development_events": 8,
+    "development_pairs": 24,
+    "development_stations_per_split": 3,
+    "provider": "EarthScope FDSN, IU network",
+    "records": [
+      {
+        "bytes": 604413,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20100227063411530_30/ANMO/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "67b36456c4b3b42d1fe42efa023f70a7fb758545b5c4e978517aa99d81339a06",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2010-02-27T06%3A49%3A11.530Z&endtime=2010-02-27T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 603435,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20100227063411530_30/ANMO/quiet",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "18b23976640493ff4fc489cb5cf3bf4106cdd67e1fff6982f9234f542d0b83a5",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2010-02-26T06%3A49%3A11.530Z&endtime=2010-02-26T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 603525,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20100227063411530_30/COLA/event",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "07a541d1f077f3170330d13f2b870c50aa3958e21bd9dc936506ac546a310a58",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2010-02-27T06%3A49%3A11.530Z&endtime=2010-02-27T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 604882,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20100227063411530_30/COLA/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "abf58a4d647151f294fe572c4dcf68208055f24530d9f2c256e524a9077fac81",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2010-02-26T06%3A49%3A11.530Z&endtime=2010-02-26T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 600173,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "official20100227063411530_30/MAJO/event",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "73453d6dc9c185756e47069eae79f34fc3f68884aca4fb5f70b73198e639293b",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2010-02-27T06%3A49%3A11.530Z&endtime=2010-02-27T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598560,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "official20100227063411530_30/MAJO/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "343fc0011996f5192b79125ce80e0f7c3c99f96b0734bd5dedac83e2bae85c40",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2010-02-26T06%3A49%3A11.530Z&endtime=2010-02-26T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 602161,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20110311054624120_30/ANMO/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "bd3c2a92943ffe4e69208db90030ebb35051a49245e9f4754a55d5fcc596adb5",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2011-03-11T06%3A01%3A24.120Z&endtime=2011-03-11T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598255,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20110311054624120_30/ANMO/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "b838209a56be485777d7eb3c1e005791bf36c1187a451b630284b4bdb2f28682",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2011-03-10T06%3A01%3A24.120Z&endtime=2011-03-10T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 608837,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20110311054624120_30/COLA/event",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "5528c2fc51c66b73afff60c580c7eef1ce33a888a06589b10aefd6ae60146f51",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2011-03-11T06%3A01%3A24.120Z&endtime=2011-03-11T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599772,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20110311054624120_30/COLA/quiet",
+        "maximum_gap_seconds": 0.05000019073486328,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "db62cbae7949e8162b33b9212a45cea25ce28d58d29f431e3874092496fbfd25",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2011-03-10T06%3A01%3A24.120Z&endtime=2011-03-10T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 626770,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "official20110311054624120_30/MAJO/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "1546f5e6f85d01ed17d49f954ed009147cf67acad5f148c90ae720ca8684d81a",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2011-03-11T06%3A01%3A24.120Z&endtime=2011-03-11T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 600035,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "official20110311054624120_30/MAJO/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "224ada967076ae8f7e97ae71f02267a1f84f848d2c6ec3495d5b36f26fb40201",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2011-03-10T06%3A01%3A24.120Z&endtime=2011-03-10T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 595893,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20120411083836720_20/ANMO/event",
+        "maximum_gap_seconds": 0.050000905990600586,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "2c641143da583edbbc17de7708d449811fe3cfc9863cfb18811d3ab6860a37a1",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2012-04-11T08%3A53%3A36.720Z&endtime=2012-04-11T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599596,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20120411083836720_20/ANMO/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "797820f2c7994c5e8e4cfc05720391f168fb83e4d9d7cb6223524f362f5b9bae",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2012-04-10T08%3A53%3A36.720Z&endtime=2012-04-10T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 611166,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20120411083836720_20/COLA/event",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "4deefcde571b9d67ef874aa683ae60273f87152a47fd377644d7fccec28813ba",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2012-04-11T08%3A53%3A36.720Z&endtime=2012-04-11T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601208,
+        "common_samples": 4799,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "official20120411083836720_20/COLA/quiet",
+        "maximum_gap_seconds": 0.050000905990600586,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "35ea963d3f557ed515373a4112b011847062d59a63356757f5515c07dc812f04",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2012-04-10T08%3A53%3A36.720Z&endtime=2012-04-10T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599413,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "official20120411083836720_20/MAJO/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "392a8a10095289299942ffc688f2ca52f44460996fde957f5b13e5b83a98fbbd",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2012-04-11T08%3A53%3A36.720Z&endtime=2012-04-11T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 600534,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "official20120411083836720_20/MAJO/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "01b5d3b4d0d03149db45cb86167023930f60fb115336fe5c5fad1b92a4828899",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2012-04-10T08%3A53%3A36.720Z&endtime=2012-04-10T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598006,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "usb000h4jh/ANMO/event",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "9a000c0be7b99c27a3944024da9e4417b16af37dcd933af968522ba97902a509",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2013-05-24T05%3A59%3A48.980Z&endtime=2013-05-24T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598738,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "usb000h4jh/ANMO/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "08e8fccf438558bbda0b296981d810f5637656cee932d87e5bc4ac2723e6db75",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2013-05-23T05%3A59%3A48.980Z&endtime=2013-05-23T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 602350,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "usb000h4jh/COLA/event",
+        "maximum_gap_seconds": 0.05000185966491699,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "08cac235c46df6bb416f8bcf85a8d500a6a30eb12154fbfb29498c541b88168e",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2013-05-24T05%3A59%3A48.980Z&endtime=2013-05-24T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 612067,
+        "common_samples": 4800,
+        "instruments": [
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer",
+          "Geotech KS-54000 Borehole Seismometer"
+        ],
+        "key": "usb000h4jh/COLA/quiet",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "652bec85b7211c5b489be68a05dbf8a4c51e2cca51c1e1b3d6cdc0e441af93c9",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2013-05-23T05%3A59%3A48.980Z&endtime=2013-05-23T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 609829,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "usb000h4jh/MAJO/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "60cd3ed53b77a8f6484a81c868eb64807ae787076a6d817dfef747ec559a1227",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2013-05-24T05%3A59%3A48.980Z&endtime=2013-05-24T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 600295,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "usb000h4jh/MAJO/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "0f208f358c7122744ca930c16027d25369d43e7a17ad9a063cbcda86389f3959",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2013-05-23T05%3A59%3A48.980Z&endtime=2013-05-23T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601263,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "usc000nzvd/COR/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "e8917bc76d977c45648961108b9f000ea157e40da2eab1961b6eb20ecf696d2f",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2014-04-02T00%3A01%3A47.260Z&endtime=2014-04-02T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 613324,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "usc000nzvd/COR/quiet",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "704021fe2525fb532af608f692c371dda8931e253b82bcc8de1aa3af080fd1c1",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2014-04-01T00%3A01%3A47.260Z&endtime=2014-04-01T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 616425,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "usc000nzvd/KONO/event",
+        "maximum_gap_seconds": 0.05000615119934082,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "e6191afc1c8f830076b3270cefa7a8739e432a96a5bc9647698902949ea0cfb6",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2014-04-02T00%3A01%3A47.260Z&endtime=2014-04-02T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 608128,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "usc000nzvd/KONO/quiet",
+        "maximum_gap_seconds": 0.050006866455078125,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "b21f2dbb4030262c8f95c13b5f97050c4589f9a66f4a317ca059933dd0367efa",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2014-04-01T00%3A01%3A47.260Z&endtime=2014-04-01T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 600070,
+        "common_samples": 4800,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "usc000nzvd/HRV/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "6f98c88c58e36b4daadc552c74166ebb4f72fe55b2d99ccf6d2e4bde303aaf40",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2014-04-02T00%3A01%3A47.260Z&endtime=2014-04-02T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598186,
+        "common_samples": 4800,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "usc000nzvd/HRV/quiet",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "b08e14000e43fdb66f6fb86cb8cd60814c8cf77e15eaccdfd424a6f3f93d6137",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2014-04-01T00%3A01%3A47.260Z&endtime=2014-04-01T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 608257,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us20003k7a/COR/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "55407c2c59d1b6484e0346928dbc1d3120b2da91c4c7a27e1ddfdf45aa045d1b",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2015-09-16T23%3A09%3A32.860Z&endtime=2015-09-16T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 593273,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us20003k7a/COR/quiet",
+        "maximum_gap_seconds": 0.05000019073486328,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "403f09a8e9c7f712c2d8017096e085d640c730dd7fc369cec4e323b93653e62c",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2015-09-15T23%3A09%3A32.860Z&endtime=2015-09-15T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 596402,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us20003k7a/KONO/event",
+        "maximum_gap_seconds": 0.05000019073486328,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "ce322023bc30768b42b3391faad7db22ae99bb467283760c499d631d7fc6df7a",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2015-09-16T23%3A09%3A32.860Z&endtime=2015-09-16T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 596882,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us20003k7a/KONO/quiet",
+        "maximum_gap_seconds": 0.05000019073486328,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "5ad911b181ef7a2991904bede319c1bf19fb2257f263da545d4740b3edf6b888",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2015-09-15T23%3A09%3A32.860Z&endtime=2015-09-15T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599547,
+        "common_samples": 4800,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "us20003k7a/HRV/event",
+        "maximum_gap_seconds": 0.050000905990600586,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "291e1d26db3bc0a082a6fe07b03b05ec8184ffdf19a9f9b0a63c6a956e41c62c",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2015-09-16T23%3A09%3A32.860Z&endtime=2015-09-16T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601349,
+        "common_samples": 4799,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "us20003k7a/HRV/quiet",
+        "maximum_gap_seconds": 0.050000905990600586,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "6adad3686e2b2dd5d211df640b0304ef9448d4c4fa071b421b2475ff3c5aa3dd",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2015-09-15T23%3A09%3A32.860Z&endtime=2015-09-15T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601517,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us2000ahv0/COR/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "a59b3f7fd29c4703401e90ca10e35c21270f820c7bcec9eb167afdfefcd8ac36",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2017-09-08T05%3A04%3A19.180Z&endtime=2017-09-08T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 606611,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us2000ahv0/COR/quiet",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "144a531d34cf0926944d9ac804293551d6ac9fa9bb80fa136b8b2b9f6b2f4dd1",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2017-09-07T05%3A04%3A19.180Z&endtime=2017-09-07T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 625636,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us2000ahv0/KONO/event",
+        "maximum_gap_seconds": 0.05000495910644531,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "b81f1252d49f6cff89039de2275d6ac5038771dad2c2ca5528785eac23e2aaaa",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2017-09-08T05%3A04%3A19.180Z&endtime=2017-09-08T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 619920,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us2000ahv0/KONO/quiet",
+        "maximum_gap_seconds": 0.050006866455078125,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "72847cb35ff97191fb51f595f1d4769dd465d09df0e2e7b2c96633c30c1ce782",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2017-09-07T05%3A04%3A19.180Z&endtime=2017-09-07T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 602212,
+        "common_samples": 4800,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "us2000ahv0/HRV/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "4e6756c9510f4c8069bf5b0e75aefb6632bdaff073fc72e87bd0bb628aa33b08",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2017-09-08T05%3A04%3A19.180Z&endtime=2017-09-08T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 600463,
+        "common_samples": 4800,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "us2000ahv0/HRV/quiet",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "7341a8277325cb2dd8c284309449621d7cf719b2e407e4c8a120127d1adb4b4c",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2017-09-07T05%3A04%3A19.180Z&endtime=2017-09-07T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 605961,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us60003sc0/COR/event",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "0731d9721d6729559776409245ff014d5a8914764b36770f675647bd1419d757",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2019-05-26T07%3A56%3A15.073Z&endtime=2019-05-26T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601184,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us60003sc0/COR/quiet",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "48d2a59238a5f56ba007aebf5e3fb3f4444694371d723bafd27ac9172543450c",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2019-05-25T07%3A56%3A15.073Z&endtime=2019-05-25T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 623928,
+        "common_samples": 4799,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us60003sc0/KONO/event",
+        "maximum_gap_seconds": 0.050005197525024414,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "b4094910d38567ce186a1e4f5612350551f1e59304b87c2e2eeafc4207ba0a87",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2019-05-26T07%3A56%3A15.073Z&endtime=2019-05-26T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 614486,
+        "common_samples": 4800,
+        "instruments": [
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300",
+          "Streckeisen STS-1VBB w/E300"
+        ],
+        "key": "us60003sc0/KONO/quiet",
+        "maximum_gap_seconds": 0.050003767013549805,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "7d3361f8f74dcfff7c1bbb9c2e5f2c7ed804bf3bbaae183f57ba4e0ab226a346",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2019-05-25T07%3A56%3A15.073Z&endtime=2019-05-25T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 602533,
+        "common_samples": 4800,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "us60003sc0/HRV/event",
+        "maximum_gap_seconds": 0.050002098083496094,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "bab5de3ca953a782af9677c253dac6515aa31428e045376c699e5392befc607d",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2019-05-26T07%3A56%3A15.073Z&endtime=2019-05-26T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 611599,
+        "common_samples": 4799,
+        "instruments": [
+          "Velocity Sensor",
+          "Velocity Sensor",
+          "Velocity Sensor"
+        ],
+        "key": "us60003sc0/HRV/quiet",
+        "maximum_gap_seconds": 0.05000114440917969,
+        "native_sample_rates_hz": [
+          20.0,
+          20.0,
+          20.0
+        ],
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "a2d521283660d46014d31fa21ea5eda22b0840108ed5951c53a303c6285241ed",
+        "target_sample_rate_hz": 20.0,
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2019-05-25T07%3A56%3A15.073Z&endtime=2019-05-25T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 595046,
+        "common_samples": 4799,
+        "key": "official20100227063411530_30/ANMO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "0946c6b08505c9f18a85794523773b33425fb9a591a41b41dc8d491705c108c5",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2010-02-25T06%3A49%3A11.530Z&endtime=2010-02-25T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 603493,
+        "common_samples": 4799,
+        "key": "official20100227063411530_30/COLA/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "6905466eccaae8394fdc6726ea012eb3c6b9b39a660de84aaca885ebe57b391c",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2010-02-25T06%3A49%3A11.530Z&endtime=2010-02-25T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 605734,
+        "common_samples": 4799,
+        "key": "official20100227063411530_30/MAJO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "56812764539321288eb9fcf31280610c949243e944425c0cf0fccda2a16e4e51",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2010-02-25T06%3A49%3A11.530Z&endtime=2010-02-25T06%3A53%3A11.530Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598266,
+        "common_samples": 4800,
+        "key": "official20110311054624120_30/ANMO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "168b0b2b75a5c4d7388655f16d672bed2e96f60fbb31d919de3a2e2798ef29db",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2011-03-09T06%3A01%3A24.120Z&endtime=2011-03-09T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 603434,
+        "common_samples": 4800,
+        "key": "official20110311054624120_30/COLA/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "ded7f583a2731efd4d3704fb29017c61598ed6397e9ff0139499fb38c53c438a",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2011-03-09T06%3A01%3A24.120Z&endtime=2011-03-09T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 604784,
+        "common_samples": 4800,
+        "key": "official20110311054624120_30/MAJO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "4b1c3acdb415c61892d07caf8aa65fc23fec1f7891d09e8ce371135abd8e280b",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2011-03-09T06%3A01%3A24.120Z&endtime=2011-03-09T06%3A05%3A24.120Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 595011,
+        "common_samples": 4800,
+        "key": "official20120411083836720_20/ANMO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "064c2e827caac8bafe547ff4b34bbc0bc0d203186b2cfe8b30331d9e7b62d99c",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2012-04-09T08%3A53%3A36.720Z&endtime=2012-04-09T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 605334,
+        "common_samples": 4800,
+        "key": "official20120411083836720_20/COLA/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "2333ab791a445cc590880e04509990028e2fd2e33a0d1c6ef35faaeb7ea996a8",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2012-04-09T08%3A53%3A36.720Z&endtime=2012-04-09T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 603855,
+        "common_samples": 4799,
+        "key": "official20120411083836720_20/MAJO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "f004773be2d8fe6ee49d6d98743865a3299a4a382cd1849ef09c6d6de13a4d77",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2012-04-09T08%3A53%3A36.720Z&endtime=2012-04-09T08%3A57%3A36.720Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 594921,
+        "common_samples": 4800,
+        "key": "usb000h4jh/ANMO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_ANMO_00_BH1",
+          "IU_ANMO_00_BH2",
+          "IU_ANMO_00_BHZ"
+        ],
+        "sha256": "cd9a6658c0f682bbdca69b5f67aab6ce0444b8170c5b566c97219567e76bab23",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH%3F&starttime=2013-05-22T05%3A59%3A48.980Z&endtime=2013-05-22T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 610169,
+        "common_samples": 4799,
+        "key": "usb000h4jh/COLA/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COLA_00_BH1",
+          "IU_COLA_00_BH2",
+          "IU_COLA_00_BHZ"
+        ],
+        "sha256": "beaac2bbf6148ab4b7c62d0503093b16fe7e831f7bd2333c854716ec7a7a6f96",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COLA&loc=00&cha=BH%3F&starttime=2013-05-22T05%3A59%3A48.980Z&endtime=2013-05-22T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 597986,
+        "common_samples": 4800,
+        "key": "usb000h4jh/MAJO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_MAJO_00_BH1",
+          "IU_MAJO_00_BH2",
+          "IU_MAJO_00_BHZ"
+        ],
+        "sha256": "fb0d480be4d0b00e84e6a7997d3d6cd91aa9d85c733bf285c2a333d2a1d273ef",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=MAJO&loc=00&cha=BH%3F&starttime=2013-05-22T05%3A59%3A48.980Z&endtime=2013-05-22T06%3A03%3A48.980Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 602788,
+        "common_samples": 4799,
+        "key": "usc000nzvd/COR/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "c088cdf473d7a6f9bbb729182daa3ef3bd4ca750b83bb354b1149ff5abac9723",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2014-03-31T00%3A01%3A47.260Z&endtime=2014-03-31T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 609007,
+        "common_samples": 4799,
+        "key": "usc000nzvd/KONO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "601b939dc230ef6f81f4d8c1d01ebd193b816b683bf0bea3a98824b1528da5cb",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2014-03-31T00%3A01%3A47.260Z&endtime=2014-03-31T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 609799,
+        "common_samples": 4799,
+        "key": "usc000nzvd/HRV/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "c1a70a0c8c7b8a60dc8bf1db63c42fdf2ef5717a996383482197b8b9f8f552f8",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2014-03-31T00%3A01%3A47.260Z&endtime=2014-03-31T00%3A05%3A47.260Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 609250,
+        "common_samples": 4799,
+        "key": "us20003k7a/COR/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "2ffbb379bf3bdf0bea26f5b364307f2a5c3184a34a9b01b53312ae0be936351f",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2015-09-14T23%3A09%3A32.860Z&endtime=2015-09-14T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 595589,
+        "common_samples": 4799,
+        "key": "us20003k7a/KONO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "e143584b8523067d17e35c217edfeb7defe283ccb994f54ccc33866b99ef9039",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2015-09-14T23%3A09%3A32.860Z&endtime=2015-09-14T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601270,
+        "common_samples": 4800,
+        "key": "us20003k7a/HRV/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "b3631ba4bf61386e28af1dd056b8eafb405c77ddc725cc79ceea837ae24d10a8",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2015-09-14T23%3A09%3A32.860Z&endtime=2015-09-14T23%3A13%3A32.860Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 605178,
+        "common_samples": 4800,
+        "key": "us2000ahv0/COR/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "31a9237e1da9396407338eedbb14b5df5bbf3d554797a46e1b8c0160cd350cc0",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2017-09-06T05%3A04%3A19.180Z&endtime=2017-09-06T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 620048,
+        "common_samples": 4799,
+        "key": "us2000ahv0/KONO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "a4476f2595510a99e1ef3cca3bcfef5bb957795bbf27c73ad9814817737c0ad1",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2017-09-06T05%3A04%3A19.180Z&endtime=2017-09-06T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 603211,
+        "common_samples": 4799,
+        "key": "us2000ahv0/HRV/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "f3043a29bfe8bd8262b0b0a6bb5cdef31133809008000520372c40c33388d4cb",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2017-09-06T05%3A04%3A19.180Z&endtime=2017-09-06T05%3A08%3A19.180Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601216,
+        "common_samples": 4800,
+        "key": "us60003sc0/COR/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_COR_00_BH1",
+          "IU_COR_00_BH2",
+          "IU_COR_00_BHZ"
+        ],
+        "sha256": "3d4ffcc8f486efbfb61015a148c2cef0b24b807635aef14769e24255ada9636a",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=COR&loc=00&cha=BH%3F&starttime=2019-05-24T07%3A56%3A15.073Z&endtime=2019-05-24T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 617172,
+        "common_samples": 4800,
+        "key": "us60003sc0/KONO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_KONO_00_BH1",
+          "IU_KONO_00_BH2",
+          "IU_KONO_00_BHZ"
+        ],
+        "sha256": "115f7ac5e77cb5b4dca705135c60215f7a76fce456c3c640167c9cf6f00f4db5",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=KONO&loc=00&cha=BH%3F&starttime=2019-05-24T07%3A56%3A15.073Z&endtime=2019-05-24T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601544,
+        "common_samples": 4800,
+        "key": "us60003sc0/HRV/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_HRV_00_BH1",
+          "IU_HRV_00_BH2",
+          "IU_HRV_00_BHZ"
+        ],
+        "sha256": "e5dfcd5265e956ca19a3786c3c0c3f5360f262345916b4cfc5e4c5dbd4f57fa7",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH%3F&starttime=2019-05-24T07%3A56%3A15.073Z&endtime=2019-05-24T08%3A00%3A15.073Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599693,
+        "common_samples": 4800,
+        "key": "us7000dflf/TATO/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "13dd9b95f39bc8e8d2ca87e04548557e3e518591955a1964f119a307d8b1d75a",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-03-04T19%3A43%3A33.178Z&endtime=2021-03-04T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 612354,
+        "common_samples": 4800,
+        "key": "us7000dflf/TATO/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "1f339d26a1d64f6d83a6ed380bc2a10f6affe068deaa21b00463e54b458ee45c",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-03-03T19%3A43%3A33.178Z&endtime=2021-03-03T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 611997,
+        "common_samples": 4800,
+        "key": "us7000dflf/TATO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "6104bc26fd6a9b30493bc0f1473596c79f5c30ab619ce6fe59bc2dd58167f7e1",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-03-02T19%3A43%3A33.178Z&endtime=2021-03-02T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 601405,
+        "common_samples": 4800,
+        "key": "us7000dflf/PAB/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "eebcb81b16a3652b8a843326a44d51440273f1cfe4b3360f211012218c66c64c",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-03-04T19%3A43%3A33.178Z&endtime=2021-03-04T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 600819,
+        "common_samples": 4799,
+        "key": "us7000dflf/PAB/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "6db02a1d91aada5795107ba6abfe946a51772c655e90664a4f33511be37f174d",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-03-03T19%3A43%3A33.178Z&endtime=2021-03-03T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 607668,
+        "common_samples": 4800,
+        "key": "us7000dflf/PAB/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "905d9290f4bfdeabb847964a44d68fbdac7b2ce184b076e675470060d654df32",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-03-02T19%3A43%3A33.178Z&endtime=2021-03-02T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 596509,
+        "common_samples": 4800,
+        "key": "us7000dflf/CASY/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "a883dbebeab63cbcb373288f1dde7676927b714e4eabc6d202ba23bd7cd399a2",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-03-04T19%3A43%3A33.178Z&endtime=2021-03-04T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 593484,
+        "common_samples": 4800,
+        "key": "us7000dflf/CASY/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "b2c17b0930f95340cde7afdfbd91788591b8b9a97603c68b8962e81796a3b430",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-03-03T19%3A43%3A33.178Z&endtime=2021-03-03T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 591928,
+        "common_samples": 4800,
+        "key": "us7000dflf/CASY/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "1648b27eb249228c7bc69717c9a408b5d1da5fadae1084ba9a0f0279767c007e",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-03-02T19%3A43%3A33.178Z&endtime=2021-03-02T19%3A47%3A33.178Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599631,
+        "common_samples": 4800,
+        "key": "ak0219neiszm/TATO/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "e2e39832b2b81ee63f5b6a2dab9018dd054790c2b6d9a1aa6ba22573f4611356",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-07-29T06%3A30%3A49.188Z&endtime=2021-07-29T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 602290,
+        "common_samples": 4800,
+        "key": "ak0219neiszm/TATO/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "b5eaf5f18264fdd19cbf4c5a37d03cbbe0cfb87c2e8e5196cb510bf93f855731",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-07-28T06%3A30%3A49.188Z&endtime=2021-07-28T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599666,
+        "common_samples": 4800,
+        "key": "ak0219neiszm/TATO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "bb7e5ed2fc6b4a5325a2100e254493c8cc3744d5151eb2ba4ca606f65193bf5b",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-07-27T06%3A30%3A49.188Z&endtime=2021-07-27T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 610031,
+        "common_samples": 4799,
+        "key": "ak0219neiszm/PAB/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "9ac7ad9f2b7f66b5ef9e6998f50742c0df4642a6a601303a7d167e980c8bf504",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-07-29T06%3A30%3A49.188Z&endtime=2021-07-29T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 606628,
+        "common_samples": 4800,
+        "key": "ak0219neiszm/PAB/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "9637d9f049e804c5f9ea77f98c183b89d3b954ef07b04d97431ae4542633cb4e",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-07-28T06%3A30%3A49.188Z&endtime=2021-07-28T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 611584,
+        "common_samples": 4800,
+        "key": "ak0219neiszm/PAB/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "73b6000ccffe01ed19d234e08031e62c3369b40468ee82d08969b0db54450c0f",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-07-27T06%3A30%3A49.188Z&endtime=2021-07-27T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 602985,
+        "common_samples": 4799,
+        "key": "ak0219neiszm/CASY/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "2f6343b6ea5a3615fcbd441b1de63d9ab412e3b664f8d8f5e65fdbd4d6831e74",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-07-29T06%3A30%3A49.188Z&endtime=2021-07-29T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 594131,
+        "common_samples": 4800,
+        "key": "ak0219neiszm/CASY/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "27faef5b8bcf6fd93712cb7d9674f66bbed05ad642d20fed27acb84fea55d590",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-07-28T06%3A30%3A49.188Z&endtime=2021-07-28T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598932,
+        "common_samples": 4800,
+        "key": "ak0219neiszm/CASY/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "a90f9a4b9e3f49cd1f89eb835111e99d9383f117e7396914d91f139b1d52c1de",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-07-27T06%3A30%3A49.188Z&endtime=2021-07-27T06%3A34%3A49.188Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599685,
+        "common_samples": 4800,
+        "key": "us6000f53e/TATO/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "ef471d385997ece0ef6b38ecacfda1d3774cab8415c3de7d7f9806c10e676072",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-08-12T18%3A50%3A17.231Z&endtime=2021-08-12T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599757,
+        "common_samples": 4800,
+        "key": "us6000f53e/TATO/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "20b02088acef8712fc8b9d616ede0e9b3f8f1e1fc242b8dc122209078b89dc1e",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-08-11T18%3A50%3A17.231Z&endtime=2021-08-11T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 604019,
+        "common_samples": 4800,
+        "key": "us6000f53e/TATO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "21dba24d87bf10be54b1f792b4f6562bf0b5867f13d1e4d49e2a90c99901d21d",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2021-08-10T18%3A50%3A17.231Z&endtime=2021-08-10T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598889,
+        "common_samples": 4799,
+        "key": "us6000f53e/PAB/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "13dafb9ee6282e420a89369c38f7e31dfc9a4aa64f6686281186474342fe6ca7",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-08-12T18%3A50%3A17.231Z&endtime=2021-08-12T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 597786,
+        "common_samples": 4800,
+        "key": "us6000f53e/PAB/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "345a77c7b42d5ae5f05cbfa54c88931e939683e429fb3219cebabea05d024454",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-08-11T18%3A50%3A17.231Z&endtime=2021-08-11T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599473,
+        "common_samples": 4800,
+        "key": "us6000f53e/PAB/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "8f741eede9f176739a518c084eaade8fa424b231883d24bc07a4c0e22343be4e",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2021-08-10T18%3A50%3A17.231Z&endtime=2021-08-10T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 597018,
+        "common_samples": 4800,
+        "key": "us6000f53e/CASY/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "1cc11c065a1475fd623c1e62f5e97d38a9978404695fe5f3c9837d2339c48ba9",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-08-12T18%3A50%3A17.231Z&endtime=2021-08-12T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 597344,
+        "common_samples": 4800,
+        "key": "us6000f53e/CASY/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "829b375e2a321acd30077a23ce8929d1013b7d13f6f522fe136dd601bac1b2b0",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-08-11T18%3A50%3A17.231Z&endtime=2021-08-11T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 593712,
+        "common_samples": 4800,
+        "key": "us6000f53e/CASY/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "dbb11f758b13d6e5ce7fd785ae1659859fe1fd3a680148b14001de6640a8dac0",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2021-08-10T18%3A50%3A17.231Z&endtime=2021-08-10T18%3A54%3A17.231Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 598578,
+        "common_samples": 4800,
+        "key": "us6000qw60/TATO/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "b5c3ab0e76c7dfc9d964eb8607eafd857856c2a903e5e1e10ea4b719afb6964b",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2025-07-29T23%3A39%3A52.483Z&endtime=2025-07-29T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 599617,
+        "common_samples": 4800,
+        "key": "us6000qw60/TATO/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "04fd70dac060f6284fe1e1c96bd82392204f5da532696d7c3d7d3aeb8013a6b1",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2025-07-28T23%3A39%3A52.483Z&endtime=2025-07-28T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 610959,
+        "common_samples": 4800,
+        "key": "us6000qw60/TATO/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_TATO_00_BH1",
+          "IU_TATO_00_BH2",
+          "IU_TATO_00_BHZ"
+        ],
+        "sha256": "5e9f68e1e0678ebb3059df97ad3cc45eb41021f4d3c468e0a6cb58a7eb73d725",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TATO&loc=00&cha=BH%3F&starttime=2025-07-27T23%3A39%3A52.483Z&endtime=2025-07-27T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 1209695,
+        "common_samples": 4800,
+        "key": "us6000qw60/PAB/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "9e00fbd1509d15403b74566c05c55138d0ad83c57c323bedbe89438d0ff1e672",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2025-07-29T23%3A39%3A52.483Z&endtime=2025-07-29T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 1208043,
+        "common_samples": 4800,
+        "key": "us6000qw60/PAB/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "2d1a75beef644dd1e4b1264aa8645e9386180dfce103be6bf72b0a3c2ee2a7c0",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2025-07-28T23%3A39%3A52.483Z&endtime=2025-07-28T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 1199225,
+        "common_samples": 4800,
+        "key": "us6000qw60/PAB/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_PAB_00_BH1",
+          "IU_PAB_00_BH2",
+          "IU_PAB_00_BHZ"
+        ],
+        "sha256": "56eaa02948fa4f3f6c1528936a5e6927afac443b1181a5992629b806c4368cb9",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=PAB&loc=00&cha=BH%3F&starttime=2025-07-27T23%3A39%3A52.483Z&endtime=2025-07-27T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 596229,
+        "common_samples": 4800,
+        "key": "us6000qw60/CASY/event",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "2ac0e055fcc50bc9dfb110795dd9652face5b39115b4538190b8a61773259603",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2025-07-29T23%3A39%3A52.483Z&endtime=2025-07-29T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 610060,
+        "common_samples": 4799,
+        "key": "us6000qw60/CASY/reference",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "c2d8adee51df91fd129b35fdb30b6bbfb85a2aeeea248a616cd69f5eadc11a51",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2025-07-28T23%3A39%3A52.483Z&endtime=2025-07-28T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      },
+      {
+        "bytes": 596397,
+        "common_samples": 4800,
+        "key": "us6000qw60/CASY/negative",
+        "scale_units": [
+          "m/s",
+          "m/s",
+          "m/s"
+        ],
+        "selected_sids": [
+          "IU_CASY_00_BH1",
+          "IU_CASY_00_BH2",
+          "IU_CASY_00_BHZ"
+        ],
+        "sha256": "81e33ea6980771a1ee1404be641ac54e22f65e10e771f98293e1af28f0f98fd7",
+        "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=CASY&loc=00&cha=BH%3F&starttime=2025-07-27T23%3A39%3A52.483Z&endtime=2025-07-27T23%3A43%3A52.483Z&format=geocsv&scale=AUTO&nodata=404"
+      }
+    ]
+  },
+  "development": {
+    "raw_mean": {
+      "auc": 0.953125,
+      "balanced_accuracy": 0.9375,
+      "threshold": -10.299964270625573
+    },
+    "raw_q90": {
+      "auc": 0.9548611111111112,
+      "balanced_accuracy": 0.9375,
+      "threshold": -10.071069028356781
+    },
+    "reference_ratio": {
+      "auc": 0.9895833333333334,
+      "balanced_accuracy": 0.9791666666666667,
+      "threshold": 0.8422956583638177
+    }
+  },
+  "prefix_curves": [
+    {
+      "confirmation": {
+        "raw_mean": {
+          "auc": 0.7916666666666666,
+          "balanced_accuracy": 0.6666666666666667,
+          "development_threshold": -10.42961055701474,
+          "sensitivity": 0.75,
+          "specificity": 0.5833333333333334
+        },
+        "raw_q90": {
+          "auc": 0.7916666666666666,
+          "balanced_accuracy": 0.6666666666666667,
+          "development_threshold": -10.42961055701474,
+          "sensitivity": 0.75,
+          "specificity": 0.5833333333333334
+        },
+        "reference_ratio": {
+          "auc": 0.7777777777777778,
+          "balanced_accuracy": 0.7916666666666667,
+          "development_threshold": 0.7610067730673702,
+          "sensitivity": 0.5833333333333334,
+          "specificity": 1.0
+        }
+      },
+      "development_leave_event_out": {
+        "by_event": {
+          "official20100227063411530_30": 0.8333333333333333,
+          "official20110311054624120_30": 1.0,
+          "official20120411083836720_20": 0.8333333333333333,
+          "us20003k7a": 0.8333333333333333,
+          "us2000ahv0": 1.0,
+          "us60003sc0": 1.0,
+          "usb000h4jh": 1.0,
+          "usc000nzvd": 1.0
+        },
+        "mean_balanced_accuracy": 0.9375,
+        "worst_balanced_accuracy": 0.8333333333333333
+      },
+      "prefix_blocks": 1,
+      "prefix_seconds": 3.2
+    },
+    {
+      "confirmation": {
+        "raw_mean": {
+          "auc": 0.7986111111111112,
+          "balanced_accuracy": 0.7083333333333334,
+          "development_threshold": -10.22773148808659,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5833333333333334
+        },
+        "raw_q90": {
+          "auc": 0.8125,
+          "balanced_accuracy": 0.6666666666666667,
+          "development_threshold": -10.426425486652185,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5
+        },
+        "reference_ratio": {
+          "auc": 0.8125,
+          "balanced_accuracy": 0.7916666666666666,
+          "development_threshold": 0.6324578180598859,
+          "sensitivity": 0.6666666666666666,
+          "specificity": 0.9166666666666666
+        }
+      },
+      "development_leave_event_out": {
+        "by_event": {
+          "official20100227063411530_30": 0.8333333333333333,
+          "official20110311054624120_30": 1.0,
+          "official20120411083836720_20": 0.8333333333333333,
+          "us20003k7a": 0.8333333333333333,
+          "us2000ahv0": 1.0,
+          "us60003sc0": 0.8333333333333333,
+          "usb000h4jh": 1.0,
+          "usc000nzvd": 1.0
+        },
+        "mean_balanced_accuracy": 0.9166666666666666,
+        "worst_balanced_accuracy": 0.8333333333333333
+      },
+      "prefix_blocks": 2,
+      "prefix_seconds": 6.4
+    },
+    {
+      "confirmation": {
+        "raw_mean": {
+          "auc": 0.8402777777777778,
+          "balanced_accuracy": 0.7083333333333333,
+          "development_threshold": -10.506559369580337,
+          "sensitivity": 0.9166666666666666,
+          "specificity": 0.5
+        },
+        "raw_q90": {
+          "auc": 0.8402777777777778,
+          "balanced_accuracy": 0.7083333333333333,
+          "development_threshold": -10.369719852809784,
+          "sensitivity": 0.9166666666666666,
+          "specificity": 0.5
+        },
+        "reference_ratio": {
+          "auc": 0.8125,
+          "balanced_accuracy": 0.7916666666666666,
+          "development_threshold": 0.6567808771003024,
+          "sensitivity": 0.6666666666666666,
+          "specificity": 0.9166666666666666
+        }
+      },
+      "development_leave_event_out": {
+        "by_event": {
+          "official20100227063411530_30": 0.8333333333333333,
+          "official20110311054624120_30": 0.5,
+          "official20120411083836720_20": 0.6666666666666666,
+          "us20003k7a": 0.8333333333333333,
+          "us2000ahv0": 1.0,
+          "us60003sc0": 0.8333333333333333,
+          "usb000h4jh": 1.0,
+          "usc000nzvd": 1.0
+        },
+        "mean_balanced_accuracy": 0.8333333333333333,
+        "worst_balanced_accuracy": 0.5
+      },
+      "prefix_blocks": 4,
+      "prefix_seconds": 12.8
+    },
+    {
+      "confirmation": {
+        "raw_mean": {
+          "auc": 0.8333333333333334,
+          "balanced_accuracy": 0.7083333333333334,
+          "development_threshold": -10.299964270625573,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5833333333333334
+        },
+        "raw_q90": {
+          "auc": 0.8333333333333334,
+          "balanced_accuracy": 0.7083333333333334,
+          "development_threshold": -10.071069028356781,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5833333333333334
+        },
+        "reference_ratio": {
+          "auc": 0.8333333333333334,
+          "balanced_accuracy": 0.7916666666666666,
+          "development_threshold": 0.8422956583638177,
+          "sensitivity": 0.6666666666666666,
+          "specificity": 0.9166666666666666
+        }
+      },
+      "development_leave_event_out": {
+        "by_event": {
+          "official20100227063411530_30": 1.0,
+          "official20110311054624120_30": 1.0,
+          "official20120411083836720_20": 0.8333333333333333,
+          "us20003k7a": 1.0,
+          "us2000ahv0": 1.0,
+          "us60003sc0": 1.0,
+          "usb000h4jh": 1.0,
+          "usc000nzvd": 1.0
+        },
+        "mean_balanced_accuracy": 0.9791666666666666,
+        "worst_balanced_accuracy": 0.8333333333333333
+      },
+      "prefix_blocks": 8,
+      "prefix_seconds": 25.6
+    },
+    {
+      "confirmation": {
+        "raw_mean": {
+          "auc": 0.8541666666666666,
+          "balanced_accuracy": 0.7083333333333334,
+          "development_threshold": -10.321709575896318,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5833333333333334
+        },
+        "raw_q90": {
+          "auc": 0.8541666666666666,
+          "balanced_accuracy": 0.7083333333333334,
+          "development_threshold": -10.055012997800592,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5833333333333334
+        },
+        "reference_ratio": {
+          "auc": 0.8472222222222222,
+          "balanced_accuracy": 0.8333333333333333,
+          "development_threshold": 0.7935442312479086,
+          "sensitivity": 0.6666666666666666,
+          "specificity": 1.0
+        }
+      },
+      "development_leave_event_out": {
+        "by_event": {
+          "official20100227063411530_30": 1.0,
+          "official20110311054624120_30": 1.0,
+          "official20120411083836720_20": 0.8333333333333333,
+          "us20003k7a": 1.0,
+          "us2000ahv0": 1.0,
+          "us60003sc0": 1.0,
+          "usb000h4jh": 1.0,
+          "usc000nzvd": 1.0
+        },
+        "mean_balanced_accuracy": 0.9791666666666666,
+        "worst_balanced_accuracy": 0.8333333333333333
+      },
+      "prefix_blocks": 16,
+      "prefix_seconds": 51.2
+    },
+    {
+      "confirmation": {
+        "raw_mean": {
+          "auc": 0.875,
+          "balanced_accuracy": 0.7083333333333334,
+          "development_threshold": -10.320642412033102,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5833333333333334
+        },
+        "raw_q90": {
+          "auc": 0.875,
+          "balanced_accuracy": 0.7083333333333334,
+          "development_threshold": -10.020380074085967,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.5833333333333334
+        },
+        "reference_ratio": {
+          "auc": 0.8402777777777778,
+          "balanced_accuracy": 0.8333333333333333,
+          "development_threshold": 0.7608690583879529,
+          "sensitivity": 0.6666666666666666,
+          "specificity": 1.0
+        }
+      },
+      "development_leave_event_out": {
+        "by_event": {
+          "official20100227063411530_30": 1.0,
+          "official20110311054624120_30": 1.0,
+          "official20120411083836720_20": 0.6666666666666666,
+          "us20003k7a": 1.0,
+          "us2000ahv0": 1.0,
+          "us60003sc0": 1.0,
+          "usb000h4jh": 1.0,
+          "usc000nzvd": 0.8333333333333333
+        },
+        "mean_balanced_accuracy": 0.9375,
+        "worst_balanced_accuracy": 0.6666666666666666
+      },
+      "prefix_blocks": 32,
+      "prefix_seconds": 102.4
+    },
+    {
+      "confirmation": {
+        "raw_mean": {
+          "auc": 0.8680555555555556,
+          "balanced_accuracy": 0.75,
+          "development_threshold": -10.414827476351295,
+          "sensitivity": 0.9166666666666666,
+          "specificity": 0.5833333333333334
+        },
+        "raw_q90": {
+          "auc": 0.8819444444444444,
+          "balanced_accuracy": 0.7916666666666667,
+          "development_threshold": -9.57638595193103,
+          "sensitivity": 0.8333333333333334,
+          "specificity": 0.75
+        },
+        "reference_ratio": {
+          "auc": 0.8402777777777778,
+          "balanced_accuracy": 0.7916666666666666,
+          "development_threshold": 0.7086956533326829,
+          "sensitivity": 0.6666666666666666,
+          "specificity": 0.9166666666666666
+        }
+      },
+      "development_leave_event_out": {
+        "by_event": {
+          "official20100227063411530_30": 1.0,
+          "official20110311054624120_30": 1.0,
+          "official20120411083836720_20": 0.6666666666666666,
+          "us20003k7a": 1.0,
+          "us2000ahv0": 1.0,
+          "us60003sc0": 1.0,
+          "usb000h4jh": 1.0,
+          "usc000nzvd": 0.8333333333333333
+        },
+        "mean_balanced_accuracy": 0.9375,
+        "worst_balanced_accuracy": 0.6666666666666666
+      },
+      "prefix_blocks": 64,
+      "prefix_seconds": 204.8
+    }
+  ],
+  "protocol": {
+    "block_size": 64,
+    "channels": 3,
+    "event_window_offset_seconds": 900,
+    "negative_offset_days": -2,
+    "prefix_grid": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "reference_offset_days": -1,
+    "sample_rate_hz": 20.0,
+    "selection_rule": "maximize mean leave-one-earthquake-out balanced accuracy; break ties toward fewer blocks",
+    "window_duration_seconds": 240
+  },
+  "provenance": {
+    "elapsed_seconds": 12.665882375004003,
+    "numpy": "2.4.3",
+    "platform": "macOS-26.6-arm64-arm-64bit-Mach-O",
+    "python": "3.13.12"
+  },
+  "runtime": [
+    {
+      "lower_microseconds": 7.8072892,
+      "median_microseconds": 7.854444,
+      "prefix_blocks": 1,
+      "prefix_seconds": 3.2,
+      "stored_energy_bytes": 8,
+      "streaming_state_bytes": 24,
+      "upper_microseconds": 8.0230892
+    },
+    {
+      "lower_microseconds": 14.676910933333334,
+      "median_microseconds": 14.948388666666666,
+      "prefix_blocks": 2,
+      "prefix_seconds": 6.4,
+      "stored_energy_bytes": 16,
+      "streaming_state_bytes": 24,
+      "upper_microseconds": 15.019611333333335
+    },
+    {
+      "lower_microseconds": 28.3974832,
+      "median_microseconds": 28.515889333333334,
+      "prefix_blocks": 4,
+      "prefix_seconds": 12.8,
+      "stored_energy_bytes": 32,
+      "streaming_state_bytes": 24,
+      "upper_microseconds": 28.85924453333333
+    },
+    {
+      "lower_microseconds": 55.608799999999995,
+      "median_microseconds": 56.07319466666667,
+      "prefix_blocks": 8,
+      "prefix_seconds": 25.6,
+      "stored_energy_bytes": 64,
+      "streaming_state_bytes": 24,
+      "upper_microseconds": 56.326616933333334
+    },
+    {
+      "lower_microseconds": 110.2443944,
+      "median_microseconds": 110.96672199999999,
+      "prefix_blocks": 16,
+      "prefix_seconds": 51.2,
+      "stored_energy_bytes": 128,
+      "streaming_state_bytes": 24,
+      "upper_microseconds": 111.21963333333333
+    },
+    {
+      "lower_microseconds": 217.43985,
+      "median_microseconds": 219.03763866666665,
+      "prefix_blocks": 32,
+      "prefix_seconds": 102.4,
+      "stored_energy_bytes": 256,
+      "streaming_state_bytes": 24,
+      "upper_microseconds": 219.66018906666665
+    },
+    {
+      "lower_microseconds": 436.5551893333333,
+      "median_microseconds": 439.2861946666667,
+      "prefix_blocks": 64,
+      "prefix_seconds": 204.8,
+      "stored_energy_bytes": 512,
+      "streaming_state_bytes": 24,
+      "upper_microseconds": 444.16278893333333
+    }
+  ],
+  "schema_version": "3.0",
+  "selection": {
+    "development_leave_event_out": {
+      "by_event": {
+        "official20100227063411530_30": 1.0,
+        "official20110311054624120_30": 1.0,
+        "official20120411083836720_20": 0.8333333333333333,
+        "us20003k7a": 1.0,
+        "us2000ahv0": 1.0,
+        "us60003sc0": 1.0,
+        "usb000h4jh": 1.0,
+        "usc000nzvd": 1.0
+      },
+      "mean_balanced_accuracy": 0.9791666666666666,
+      "prefix_blocks": 8,
+      "worst_balanced_accuracy": 0.8333333333333333
+    },
+    "prefix_blocks": 8,
+    "prefix_seconds": 25.6,
+    "threshold": 0.8422956583638177
+  },
+  "semantic_sha256": "6121bb9eaa0affe7f9b3fb7e5973e552260f180f8c4a13e2b86042ebad93c655"
+}

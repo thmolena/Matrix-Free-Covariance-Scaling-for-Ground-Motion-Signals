@@ -1,0 +1,200 @@
+{
+  "cutoff_sweep": [
+    {
+      "butterfly_relative_mse": 0.00725768478154347,
+      "cutoff_nyquist": 0.12,
+      "dense_endpoint_interpolant_relative_mse": 1.0007172057476675e-31,
+      "equal_budget_rank_relative_mse": 0.02719481548888712,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.064590641785227
+    },
+    {
+      "butterfly_relative_mse": 0.004905231601018848,
+      "cutoff_nyquist": 0.14,
+      "dense_endpoint_interpolant_relative_mse": 0.0012267348816672565,
+      "equal_budget_rank_relative_mse": 0.03845632738449402,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.05400456245554829
+    },
+    {
+      "butterfly_relative_mse": 0.004483096401859905,
+      "cutoff_nyquist": 0.16,
+      "dense_endpoint_interpolant_relative_mse": 0.0028408713864996027,
+      "equal_budget_rank_relative_mse": 0.047126790726029114,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.046313292135722765
+    },
+    {
+      "butterfly_relative_mse": 0.004534646792812379,
+      "cutoff_nyquist": 0.18,
+      "dense_endpoint_interpolant_relative_mse": 0.0035274446679708165,
+      "equal_budget_rank_relative_mse": 0.05385377731635291,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.04044798409646761
+    },
+    {
+      "butterfly_relative_mse": 0.0046681384518850325,
+      "cutoff_nyquist": 0.2,
+      "dense_endpoint_interpolant_relative_mse": 0.0032128482234514383,
+      "equal_budget_rank_relative_mse": 0.059184004596054426,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.0358259421712908
+    },
+    {
+      "butterfly_relative_mse": 0.004807367277830059,
+      "cutoff_nyquist": 0.22000000000000003,
+      "dense_endpoint_interpolant_relative_mse": 0.0022808670437128946,
+      "equal_budget_rank_relative_mse": 0.06349956434508981,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.03207891156613387
+    },
+    {
+      "butterfly_relative_mse": 0.004939285432623306,
+      "cutoff_nyquist": 0.24000000000000002,
+      "dense_endpoint_interpolant_relative_mse": 0.0011900888721161653,
+      "equal_budget_rank_relative_mse": 0.06706331251324486,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.028967166810576112
+    },
+    {
+      "butterfly_relative_mse": 0.005108095636316571,
+      "cutoff_nyquist": 0.26,
+      "dense_endpoint_interpolant_relative_mse": 0.00033314866928490947,
+      "equal_budget_rank_relative_mse": 0.07005935772551856,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.026328937129598474
+    },
+    {
+      "butterfly_relative_mse": 0.00546956966042214,
+      "cutoff_nyquist": 0.28,
+      "dense_endpoint_interpolant_relative_mse": 1.0741140749838246e-31,
+      "equal_budget_rank_relative_mse": 0.07261972427177608,
+      "exact_fft_relative_mse": 0.0,
+      "identity_relative_mse": 0.024053435589173073
+    }
+  ],
+  "data": {
+    "instrument": "Geotech KS-54000 Borehole Seismometer",
+    "network_station_channel": "IU.ANMO.00.BHZ",
+    "provider": "EarthScope FDSN",
+    "sample_rate_hz": 20.0,
+    "samples": 12000,
+    "sha256": "e202fc350422a720d0bb3f5094c143c61b851b97f937b521dd3fa1d06391aba0",
+    "start_utc": "2010-02-27T06:34:00.019538Z",
+    "url": "https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BHZ&starttime=2010-02-27T06:34:00&endtime=2010-02-27T06:44:00&format=geocsv"
+  },
+  "held_out": {
+    "dense_endpoint_interpolant_relative_mse": 0.0032128482234514383,
+    "equal_budget_rank_relative_mse": 0.059184004596054426,
+    "exact_fft_relative_mse": 0.0,
+    "identity_relative_mse": 0.0358259421712908,
+    "improvement_factor_over_identity": 7.674567183589851,
+    "learned_relative_mse": 0.0046681384518850325
+  },
+  "model": {
+    "dense_entries_per_cutoff": 4096,
+    "dense_two_knot_parameters": 8192,
+    "equal_budget_rank": 6,
+    "equal_budget_rank_parameters": 1536,
+    "factor_parameters": 1536,
+    "frequency_knots_nyquist": [
+      0.12,
+      0.28
+    ],
+    "held_out_cutoff_nyquist": 0.2,
+    "held_out_windows": 225,
+    "matrix_free": true,
+    "stride": 16,
+    "training_fraction": 0.7,
+    "training_windows": 522,
+    "window_length": 64
+  },
+  "schema_version": 2,
+  "scope": "Single-station field-waveform operator-action pilot; not a source-receiver response factorization, acquisition-design result, or production benchmark.",
+  "training": {
+    "batch_size": 24,
+    "final_minibatch_relative_mse": 0.008844341041199098,
+    "history": [
+      {
+        "iteration": 1,
+        "minibatch_relative_mse": 0.03245284490213496
+      },
+      {
+        "iteration": 50,
+        "minibatch_relative_mse": 0.00879190331245056
+      },
+      {
+        "iteration": 100,
+        "minibatch_relative_mse": 0.004198320014895605
+      },
+      {
+        "iteration": 150,
+        "minibatch_relative_mse": 0.004061859421924924
+      },
+      {
+        "iteration": 200,
+        "minibatch_relative_mse": 0.0017263140159472945
+      },
+      {
+        "iteration": 250,
+        "minibatch_relative_mse": 0.002882499166482672
+      },
+      {
+        "iteration": 300,
+        "minibatch_relative_mse": 0.0031643937921316443
+      },
+      {
+        "iteration": 350,
+        "minibatch_relative_mse": 0.003751706790132878
+      },
+      {
+        "iteration": 400,
+        "minibatch_relative_mse": 0.0021520726320155173
+      },
+      {
+        "iteration": 450,
+        "minibatch_relative_mse": 0.004194713376848452
+      },
+      {
+        "iteration": 500,
+        "minibatch_relative_mse": 0.019316278017073495
+      },
+      {
+        "iteration": 550,
+        "minibatch_relative_mse": 0.0029338132585712373
+      },
+      {
+        "iteration": 600,
+        "minibatch_relative_mse": 0.002101940145183152
+      },
+      {
+        "iteration": 650,
+        "minibatch_relative_mse": 0.0019402560537310565
+      },
+      {
+        "iteration": 700,
+        "minibatch_relative_mse": 0.0015774353305388988
+      },
+      {
+        "iteration": 750,
+        "minibatch_relative_mse": 0.004750095489656109
+      },
+      {
+        "iteration": 800,
+        "minibatch_relative_mse": 0.00223800059533971
+      },
+      {
+        "iteration": 850,
+        "minibatch_relative_mse": 0.0022126506429637014
+      },
+      {
+        "iteration": 900,
+        "minibatch_relative_mse": 0.008844341041199098
+      }
+    ],
+    "initial_minibatch_relative_mse": 0.03245284490213496,
+    "learning_rate": 0.015,
+    "seed": 260724,
+    "steps": 900
+  }
+}

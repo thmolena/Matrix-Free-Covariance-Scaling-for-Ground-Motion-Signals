@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "title": "Matrix-Free Covariance Scaling for Recorded Ground-Motion Signals",
+  "package": "taskbutterfly",
+  "original_data_source": "https://service.earthscope.org/fdsnws/dataselect/1/",
+  "locked_results": {
+    "path": "code/results/locked_results.json",
+    "sha256": "8849fb035acc4c13c3a3c55da0a251d52e2d0ce9de4f6828efbfad423780164b"
+  },
+  "commands": {
+    "install": "python -m pip install -e \"./code[test,figures]\"",
+    "download": "python code/scripts/download_data.py",
+    "reproduce": "python code/scripts/reproduce.py",
+    "figures": "python code/scripts/make_figures.py",
+    "validate": "python code/scripts/validate_release.py"
+  }
+}

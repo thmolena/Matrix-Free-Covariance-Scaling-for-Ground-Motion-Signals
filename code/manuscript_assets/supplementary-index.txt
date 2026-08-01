@@ -1,0 +1,35 @@
+SUPPLEMENTARY MATERIALS INDEX
+
+Manuscript:
+Matrix-Free Covariance Scaling for Recorded Ground-Motion Signals
+
+Author:
+Molena Huynh
+
+1. supplement.pdf
+
+Description:
+Complete rejection-capable algorithm, frozen station/event split, seed-level
+simultaneous-certificate evidence, apply/adjoint probe diagnostics, and
+falsification criteria.
+
+Justification:
+These details make the implementation, rejection decision, and negative
+controls auditable without interrupting the main manuscript. No proof
+required for the main contribution is moved out of the manuscript.
+
+2. code/
+
+Description:
+Installable Python source, tests, licenses, dependency lock, 48 frozen source
+hashes, and one locked numerical JSON output.
+
+Justification:
+This source snapshot reproduces every reported numerical experiment and
+checks the primary scientific metrics. Waveform bytes are retrieved from
+EarthScope and are not redistributed.
+
+Rights:
+The source code is BSD-3-Clause licensed. The submitting author must certify
+the right to publish every supplementary item and comply with current
+EarthScope, IU GSN, USGS, and numerical-analysis publication terms.

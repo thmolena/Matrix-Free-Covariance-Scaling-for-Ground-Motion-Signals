@@ -1,0 +1,9 @@
+# Clean validation environment: CPython 3.13.12 on macOS arm64, 2026-07-26.
+# Runtime plus the optional test dependencies; install the local package
+# separately with: python -m pip install "./code[test]"
+iniconfig==2.3.0
+numpy==2.5.1
+packaging==26.2
+pluggy==1.6.0
+Pygments==2.20.0
+pytest==9.1.1

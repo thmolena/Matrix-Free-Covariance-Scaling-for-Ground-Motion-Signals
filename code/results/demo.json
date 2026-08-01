@@ -1,0 +1,79 @@
+{
+  "n": 128,
+  "rhs": 6,
+  "frequency": 9.0,
+  "relative_apply_error": 5.801551104836907e-16,
+  "relative_adjoint_identity_error": 6.705359943275877e-16,
+  "randomized_probe_relative_mse": 3.4019345967237405e-31,
+  "prototype_matrix_free_seconds": 0.0001659159897826612,
+  "dense_blas_seconds": 0.000856792030390352,
+  "factor_parameters": 1792,
+  "dense_entries": 16384,
+  "complementary_rank_audit": [
+    {
+      "level": 0,
+      "row_block_size": 128,
+      "column_block_size": 1,
+      "sampled_blocks": 32,
+      "maximum_rank": 1,
+      "median_rank": 1.0
+    },
+    {
+      "level": 1,
+      "row_block_size": 64,
+      "column_block_size": 2,
+      "sampled_blocks": 32,
+      "maximum_rank": 2,
+      "median_rank": 2.0
+    },
+    {
+      "level": 2,
+      "row_block_size": 32,
+      "column_block_size": 4,
+      "sampled_blocks": 32,
+      "maximum_rank": 4,
+      "median_rank": 4.0
+    },
+    {
+      "level": 3,
+      "row_block_size": 16,
+      "column_block_size": 8,
+      "sampled_blocks": 32,
+      "maximum_rank": 8,
+      "median_rank": 8.0
+    },
+    {
+      "level": 4,
+      "row_block_size": 8,
+      "column_block_size": 16,
+      "sampled_blocks": 32,
+      "maximum_rank": 8,
+      "median_rank": 8.0
+    },
+    {
+      "level": 5,
+      "row_block_size": 4,
+      "column_block_size": 32,
+      "sampled_blocks": 32,
+      "maximum_rank": 4,
+      "median_rank": 4.0
+    },
+    {
+      "level": 6,
+      "row_block_size": 2,
+      "column_block_size": 64,
+      "sampled_blocks": 32,
+      "maximum_rank": 2,
+      "median_rank": 2.0
+    },
+    {
+      "level": 7,
+      "row_block_size": 1,
+      "column_block_size": 128,
+      "sampled_blocks": 32,
+      "maximum_rank": 1,
+      "median_rank": 1.0
+    }
+  ],
+  "timing_note": "The transparent Python prototype is for correctness, not performance. The proposal calls for compiled OpenMP/BLAS kernels."
+}

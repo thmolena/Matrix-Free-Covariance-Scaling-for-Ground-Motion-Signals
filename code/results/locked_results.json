@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "title": "Matrix-Free Covariance Scaling for Recorded Ground-Motion Signals",
+  "authoritative_result": {
+    "path": "code/src/taskbutterfly/results/seismic_whitening_results.json",
+    "sha256": "49d8f3d4b10b1da235735bf9fdacb2862400b4d69813c46ec5eded8050e997cc"
+  },
+  "protocol": {
+    "earthscope_requests": 48,
+    "download_bytes": 29029069,
+    "train_station_event_pairs": 12,
+    "test_station_event_pairs": 12,
+    "padded_dimension": 256,
+    "optimization_seeds": [260726, 260727, 260728, 260729, 260730],
+    "candidate_products": [1, 2, 4],
+    "certified_tasks": [-4.0, -3.5, -3.0, -2.5, -2.0],
+    "certificate_probes_per_hypothesis": 2048,
+    "familywise_hypotheses": 75,
+    "familywise_failure_probability": 0.05,
+    "relative_frobenius_mse_tolerance": 0.15
+  },
+  "deployment_result": {
+    "successful_butterfly_selections": 0,
+    "rejected_selections": 5,
+    "reason": "Every candidate fails at least one fixed task certificate.",
+    "four_product_worst_upper_bounds": [
+      0.18116690148149986,
+      0.1769836835506227,
+      0.19906359541042765,
+      0.18657779976932812,
+      0.1860445631565298
+    ],
+    "worst_task_all_seeds": -4.0,
+    "rejected_candidate_auc_reported_as_performance": false
+  },
+  "fixed_control_auc": {
+    "dense_two_knot_interpolant": 0.7569444444444444,
+    "dense_whitening": 0.8125,
+    "diagonal_whitening": 0.9166666666666666,
+    "equal_memory_hodlr_two_knot": 0.7916666666666666,
+    "equal_memory_pca": 0.8611111111111112,
+    "fft_whitening": 0.9166666666666666,
+    "hodlr_rank8": 0.8263888888888888,
+    "raw_amplitude": 0.9722222222222222,
+    "shape_identity": 0.5
+  },
+  "negative_findings": [
+    "No learned butterfly is deployed.",
+    "The apply/adjoint structural audit is diagnostic only.",
+    "The NumPy butterfly kernel is slower than dense BLAS and FFT at every common timed size.",
+    "Raw amplitude has the highest control AUC on this small large-event endpoint."
+  ]
+}

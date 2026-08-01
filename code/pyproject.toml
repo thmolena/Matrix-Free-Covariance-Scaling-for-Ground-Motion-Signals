@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskbutterfly"
+version = "3.0.0"
+description = "Station-referenced streaming energy statistics on EarthScope waveforms"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Molena Huynh", email = "thnguy22@ncsu.edu"}
+]
+keywords = ["butterfly factorization", "matrix-free", "seismology", "operator learning"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering",
+]
+dependencies = [
+  "numpy>=1.24"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest>=7"
+]
+figures = [
+  "matplotlib>=3.7"
+]
+
+[project.scripts]
+taskbutterfly-reproduce = "taskbutterfly.benchmark:main"
+station-energy-study = "taskbutterfly.streaming_study:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+taskbutterfly = ["results/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+pythonpath = ["src"]

@@ -1,0 +1,171 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=0.82in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert}
+\newcommand{\BF}{\mathcal{B}}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\title{Supplementary Materials for\\
+Matrix-Free Covariance Scaling for Recorded Ground-Motion Signals}
+\author{Molena Huynh}
+\date{}
+
+\begin{document}
+\setlength{\emergencystretch}{2em}
+\maketitle
+
+\section{Complete rejection-capable algorithm}
+
+Let $A(t)$ be a target action available at selected task values and let
+$\BF_r(t)$ be a sum of $r$ butterfly products.  The implementation executes
+the following fixed protocol.  Training and certification random-number
+generators are initialized from separate seeds; no certification vector
+appears in optimization.
+
+The fixed protocol is:
+\begin{enumerate}
+\item Fix five optimization seeds, candidate grid $\{1,2,4\}$, five certified
+tasks, $\tau=0.15$, global $\delta=0.05$, and 2,048 probes.  The complete
+family has $J=75$ hypotheses.
+\item Fit all candidates with 1,500 minibatches of 48 action pairs and learning
+rate 0.006; freeze each model before certification.
+\item At every task, draw the registered Gaussian block and evaluate residual
+and target actions.  Use $t=\log(2J/\delta)$ in the simultaneous certificate
+from the main manuscript.
+\item For each seed, accept the first candidate whose maximum five-task upper
+bound is at most 0.15.  If none passes, return rejection.  Entry-built controls
+and the apply/adjoint structural diagnostic cannot change this decision.
+\end{enumerate}
+
+For one product at dimension $n=2^L$, the forward recurrence stores the
+stage inputs
+\[
+  z_{\ell+1}=F_\ell(t)z_\ell,\qquad \ell=0,\ldots,L-1.
+\]
+Given residual $e=z_L-y$, the reverse recurrence
+\[
+  a_L=e,\qquad a_\ell=F_\ell(t)^\mathsf{T}a_{\ell+1}
+\]
+gives the gradient of every active $2\times2$ core as the corresponding
+outer product of entries of $a_{\ell+1}$ and $z_\ell$.  The implementation
+performs these indexed core products directly and never differentiates an
+assembled dense target.  For one right-hand side, forward application,
+adjoint application, and a gradient step each use $O(rn\log n)$ arithmetic.
+The untied factors store $O(rn\log n)$ scalars; the released reverse pass also
+caches $O(rn\log n)$ activation scalars.  A streaming action alone needs only
+$O(n)$ working storage beyond the factors.
+
+\section{Frozen source and split}
+
+The primary experiment contains 48 EarthScope requests: three stations times
+four earthquakes times one event and one quiet window in each of the
+training and test partitions.  Each request asks for three broadband
+components through the \texttt{BH?} selector.  Event windows begin 900 seconds
+after the USGS origin; quiet windows use the same clock time 24 hours earlier.
+No waveform is redistributed in the submission package.
+
+\begin{table}[h]
+\caption{Frozen earthquake and station split.  Event identifiers are USGS
+ComCat identifiers; stations are IU Global Seismographic Network codes.}
+\centering
+\small
+\begin{tabularx}{\textwidth}{lllX}
+\toprule
+Partition & Event identifier & Year & Stations \\
+\midrule
+Training & \texttt{official20100227063411530\_30} & 2010 & ANMO, COLA, MAJO\\
+Training & \texttt{official20110311054624120\_30} & 2011 & ANMO, COLA, MAJO\\
+Training & \texttt{official20120411083836720\_20} & 2012 & ANMO, COLA, MAJO\\
+Training & \texttt{usb000h4jh} & 2013 & ANMO, COLA, MAJO\\
+Test & \texttt{usc000nzvd} & 2014 & COR, KONO, HRV\\
+Test & \texttt{us20003k7a} & 2015 & COR, KONO, HRV\\
+Test & \texttt{us2000ahv0} & 2017 & COR, KONO, HRV\\
+Test & \texttt{us60003sc0} & 2019 & COR, KONO, HRV\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The parser handles segmented GeoCSV responses, chooses two horizontal
+components and one vertical component, and interpolates them to the common
+20-Hz time grid.  A request is rejected if coverage is below 95\% or any gap
+exceeds one second.  The accepted requests supply either 4,799 or 4,800
+common samples; the largest observed gap is approximately 0.05 seconds.  The source
+records the URL, instrument string, units, sample rate, byte length, selected
+channels, and SHA-256 digest for each request.  The 48 payloads total
+29,029,069 bytes.
+
+The preprocessing removes the mean from each 64-sample component window,
+concatenates the three components, zero pads the 192 samples to $n=256$, and
+normalizes each nonzero window to unit Euclidean norm.  No taper or
+featurewise standardization is applied.  EarthScope
+\texttt{scale=AUTO} supplies velocity units through the service-reported
+scalar sensitivity.  This is not a claim of full poles-and-zeros response
+deconvolution.
+
+\section{Additional locked numerical details}
+
+\begin{table}[h]
+\caption{Worst five-task certificate for the four-product candidate.  In all
+seeds the worst task is $t=-4$; every upper bound exceeds 0.15.}
+\centering
+\small
+\begin{tabular}{rrrr}
+\toprule
+Training seed & Certificate seed & Relative estimate & Upper bound\\
+\midrule
+260726 & 1000020 & 0.139921 & 0.181167\\
+260727 & 1000120 & 0.136690 & 0.176984\\
+260728 & 1000220 & 0.153743 & 0.199064\\
+260729 & 1000320 & 0.144100 & 0.186578\\
+260730 & 1000420 & 0.143688 & 0.186045\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\caption{Apply/adjoint-probe structural diagnostic at relative residual
+tolerance 0.05.  These sampled values are not rank upper bounds or a gate.}
+\centering
+\small
+\begin{tabular}{rrrr}
+\toprule
+Duration (s) & Dimension & Maximum tested rank & Saturated blocks\\
+\midrule
+0.8 & 64 & 8 & 0\\
+1.6 & 128 & 8 & 0\\
+3.2 & 256 & 14 & 0\\
+6.4 & 512 & 16 & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The action-probe audit does not prove asymptotic compressibility and is not
+used for deployment.
+
+\section{Reproduction and falsification}
+
+\begin{verbatim}
+python -m venv .venv
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install "./code[test]"
+.venv/bin/python -m pytest code/tests
+.venv/bin/taskbutterfly-reproduce --verify > reproduced.json
+\end{verbatim}
+
+The verifier rechecks every source digest and deterministic scientific
+quantity.  It intentionally excludes wall-clock timing and BLAS-sensitive
+measurements.  A candidate is rejected if any fixed task's simultaneous upper
+bound exceeds 0.15; this occurs for all candidates in the registered replay.
+The seismic endpoint does not support a
+claim of operational event detection, phase picking, or superiority over
+raw amplitude.
+
+\end{document}

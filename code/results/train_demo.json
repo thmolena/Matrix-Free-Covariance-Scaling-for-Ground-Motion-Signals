@@ -1,0 +1,9 @@
+{
+  "n": 32,
+  "steps": 100,
+  "rhs_per_step": 8,
+  "initial_training_relative_mse": 0.0709685734532291,
+  "final_training_relative_mse": 0.003544758794134472,
+  "held_out_frequency_relative_mse": 0.00785197544931551,
+  "note": "Synthetic algebraic smoke test; no field-data claim."
+}
